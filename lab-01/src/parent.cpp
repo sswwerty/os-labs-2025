@@ -32,21 +32,15 @@ int main() {
     }
 
     if (pid == 0) {
-        // Дочерний процесс
+        close(pipe1[1]);
+        close(pipe2[0]);
 
-        // Закрываем ненужные концы pipe'ов
-        close(pipe1[1]); // закрываем write-end pipe1
-        close(pipe2[0]); // закрываем read-end pipe2
-
-        // Перенаправляем stdin из pipe1[0]
         dup2(pipe1[0], STDIN_FILENO);
         close(pipe1[0]);
 
-        // Перенаправляем stdout в pipe2[1] (опционально)
         dup2(pipe2[1], STDOUT_FILENO);
         close(pipe2[1]);
 
-        // Подготавливаем аргументы для execv
         char* child_argv[] = {
             const_cast<char*>("./child"),
             const_cast<char*>(filename.c_str()),
@@ -57,23 +51,20 @@ int main() {
         perror("execv failed");
         exit(1);
     } else {
-        // Родительский процесс
 
-        close(pipe1[0]); // не читаем из pipe1
-        close(pipe2[1]); // не пишем в pipe2
+        close(pipe1[0]);
+        close(pipe2[1]);
 
         std::string input_line;
         std::cout << "Enter lines of floats (Ctrl+D to finish):\n";
         while (std::getline(std::cin, input_line)) {
             if (input_line.empty()) continue;
-            input_line += '\n'; // getline убирает \n
+            input_line += '\n'; \n
             write(pipe1[1], input_line.c_str(), input_line.size());
         }
 
-        // Закрываем write-end: это сигнализирует ребёнку об окончании ввода
         close(pipe1[1]);
 
-        // (Опционально) читаем ответ от ребёнка
         char buffer[256];
         ssize_t bytes;
         std::cout << "Child output (if any):\n";
@@ -83,7 +74,6 @@ int main() {
         }
         close(pipe2[0]);
 
-        // Ждём завершения дочернего процесса
         int status;
         waitpid(pid, &status, 0);
         if (WIFEXITED(status)) {
