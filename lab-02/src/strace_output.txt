@@ -1,0 +1,53 @@
+16    clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffffb080f270, parent_tid=0xffffb080f270, exit_signal=0, stack=0xffffb0000000, stack_size=0x80ea60, tls=0xffffb080f8e0}, 88) = -1 ENOSYS (Function not implemented)
+16    clone(child_stack=0xffffb080ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[17], tls=0xffffb080f8e0, child_tidptr=0xffffb080f270) = 17
+16    clone(child_stack=0xffffafe0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[18], tls=0xffffafe0f8e0, child_tidptr=0xffffafe0f270) = 18
+17    clone(child_stack=0xffffaf40ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[19], tls=0xffffaf40f8e0, child_tidptr=0xffffaf40f270) = 19
+17    clone(child_stack=0xffffaea0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[20], tls=0xffffaea0f8e0, child_tidptr=0xffffaea0f270) = 20
+19    +++ exited with 0 +++
+20    +++ exited with 0 +++
+18    clone(child_stack=0xffffae00ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[21], tls=0xffffae00f8e0, child_tidptr=0xffffae00f270) = 21
+18    clone(child_stack=0xffffaea0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+21    +++ exited with 0 +++
+18    <... clone resumed>, parent_tid=[22], tls=0xffffaea0f8e0, child_tidptr=0xffffaea0f270) = 22
+22    +++ exited with 0 +++
+17    clone(child_stack=0xffffad60ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[23], tls=0xffffad60f8e0, child_tidptr=0xffffad60f270) = 23
+17    clone(child_stack=0xffffaea0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+23    +++ exited with 0 +++
+17    <... clone resumed>, parent_tid=[24], tls=0xffffaea0f8e0, child_tidptr=0xffffaea0f270) = 24
+24    +++ exited with 0 +++
+18    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[25], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 25
+17    clone(child_stack=0xffffad60ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[26], tls=0xffffad60f8e0, child_tidptr=0xffffad60f270) = 26
+25    +++ exited with 0 +++
+18    clone(child_stack=0xffffae00ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+26    +++ exited with 0 +++
+18    <... clone resumed>, parent_tid=[27], tls=0xffffae00f8e0, child_tidptr=0xffffae00f270) = 27
+18    clone(child_stack=0xffffaf40ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[28], tls=0xffffaf40f8e0, child_tidptr=0xffffaf40f270) = 28
+17    +++ exited with 0 +++
+27    +++ exited with 0 +++
+28    clone(child_stack=0xffffad60ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[29], tls=0xffffad60f8e0, child_tidptr=0xffffad60f270) = 29
+29    +++ exited with 0 +++
+28    +++ exited with 0 +++
+18    clone(child_stack=0xffffaf40ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[30], tls=0xffffaf40f8e0, child_tidptr=0xffffaf40f270) = 30
+18    clone(child_stack=0xffffad60ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[31], tls=0xffffad60f8e0, child_tidptr=0xffffad60f270) = 31
+30    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[32], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 32
+31    +++ exited with 0 +++
+32    +++ exited with 0 +++
+30    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[33], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 33
+33    +++ exited with 0 +++
+30    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[34], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 34
+34    +++ exited with 0 +++
+30    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[35], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 35
+35    +++ exited with 0 +++
+30    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[36], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 36
+36    +++ exited with 0 +++
+30    +++ exited with 0 +++
+18    clone(child_stack=0xffffaf40ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[37], tls=0xffffaf40f8e0, child_tidptr=0xffffaf40f270) = 37
+18    clone(child_stack=0xffffacc0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[38], tls=0xffffacc0f8e0, child_tidptr=0xffffacc0f270) = 38
+37    +++ exited with 0 +++
+18    clone(child_stack=0xffffad60ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[39], tls=0xffffad60f8e0, child_tidptr=0xffffad60f270) = 39
+38    +++ exited with 0 +++
+18    clone(child_stack=0xffffaea0ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[40], tls=0xffffaea0f8e0, child_tidptr=0xffffaea0f270) = 40
+39    +++ exited with 0 +++
+40    +++ exited with 0 +++
+18    +++ exited with 0 +++
+16    +++ exited with 0 +++
